@@ -1,0 +1,1 @@
+#!/bin/bash\nyum update -y\nyum install -y httpd git\nsystemctl start httpd\nsystemctl enable httpd\necho "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
